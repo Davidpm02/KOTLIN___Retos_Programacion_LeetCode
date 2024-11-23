@@ -29,3 +29,25 @@ Constraints:
 
 */
 
+class Solution {
+
+    /**
+    Método encargado de comprobar si un entero dado puede ser
+    considerado palíndromo.
+
+    params:
+        - x (Int)
+    
+    returns:
+        Boolean
+     */
+    fun isPalindrome(x: Int): Boolean {
+        
+        val bool:Boolean = 
+        if (x < 0) { false } else {
+            if (x.toString() == x.toString().reversed()) { true } else { false }
+        }
+       
+        return bool   
+    }
+}
